@@ -22,7 +22,7 @@ void dijkstra(int s) {
       }
     }
   }
-}
+
 
 int main() {
   
