@@ -8,6 +8,16 @@ int bitcount(int n){
 	return cnt;
 }
 
+// 让某个数字(state)的第i位表示一个状态。比如 8 => 1000 ,  则如果需要让i位置1，则：
+int change_bit(int i, int state) {
+	return (state | 1 << i);
+} 
+
+// 让某个数字(state)的第i位表示一个状态。比如 8 => 1000 ,  则如果需要判断某位是否为1 则：
+bool change_bit(int i, int state) {
+	return (state >> i & 1);
+} 
+
 //查找一个数组里某个了一个数字（它出现一次）其他数字出现了两次
 int find_1_1(int arr[], int n) {
 	int ans = 0;
